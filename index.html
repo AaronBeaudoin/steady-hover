@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steady Viewport</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 10 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰</text></svg>">
+
+  <!-- Not recommended for production, but this page is just for demonstrational purposes anyways. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- `steady-hover` can be included anywhere you want on the page. -->
+  <script src="index.js"></script>
+
+  <style>
+    html[data-input=mouse] .steady:hover {
+      background-color: yellow;
+      border-color: black;
+    }
+
+    .regular:hover {
+      background-color: yellow;
+      border-color: black;
+    }
+  </style>
+</head>
+<body class="p-6 space-y-6">
+  <h1 class="text-2xl font-bold"><span class="font-mono">steady-hover</span> Demo</h1>
+  <div class="steady max-w-xs p-6 border text-sm touch-manipulation">
+    This element highlights yellow on hover when using a mouse, but doesn't do anything when tapping on a touchscreen thanks to <span class="font-mono">steady-hover</span>.
+  </div>
+  <div class="regular max-w-xs p-6 border text-sm touch-manipulation">
+    This element highlights yellow on hover when using a mouse, and behaves normally when tapping on a touchscreen.
+  </div>
+</body>
+</html>
