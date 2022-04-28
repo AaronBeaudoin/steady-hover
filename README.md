@@ -1,6 +1,6 @@
 # 🎈 `steady-hover`
 
-`steady-hover` is a tiny, dead simple JavaScript utility script with no dependencies which set a `data-input` attribute on your `<html>` element in the browser that can be used to only apply the CSS `:hover` selector if the user is using a mouse for input (as opposed to a touchscreen).
+`steady-hover` is a tiny, dead simple JavaScript utility script with no dependencies which set a `data-input` attribute on your `<html>` element in the browser that can be used to apply the CSS `:hover` selector **only** if the user is using a mouse for input (as opposed to a touchscreen).
 
 ## Why use `steady-hover`?
 
